@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GLS Knowledge Desk</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="GLS Knowledge Desk home">
+      <span class="brand-mark">GLS</span>
+      <span><strong>University Institute of Technology</strong><small>GLS Knowledge Desk</small></span>
+    </a>
+    <div class="top-actions"><div class="demo-note"><i></i> Unofficial portfolio demo</div><button id="open-live" class="live-button"><span></span> Live sources</button></div>
+  </header>
+  <main class="shell">
+    <aside class="library-panel">
+      <div class="library-intro"><p class="kicker">GLS IT KNOWLEDGE BASE</p><h2>Source library</h2><p id="library-description">Fictional demo policies for a deterministic walkthrough.</p><div class="collection-switch" role="group" aria-label="Knowledge source collection"><button class="active" data-collection="demo">Demo policies</button><button data-collection="live">Live sources</button></div></div>
+      <div id="library-stats" class="library-stats"><span><b>7</b> documents</span><span><b>5</b> policy areas</span></div>
+      <div id="documents" class="docs"></div>
+      <div id="eval-wrap" class="eval-wrap"><p class="eval-label">FICTIONAL DEMO COLLECTION ONLY</p><button id="eval-button" class="eval-button">Run 30-question evaluation <span>↗</span></button><div id="eval" class="eval hidden"></div></div>
+    </aside>
+    <section class="conversation-panel">
+      <div class="workspace-head">
+        <div><p class="kicker">EVIDENCE-GROUNDED RETRIEVAL</p><h1>Ask the knowledge desk</h1><p>Get a concise answer with exact excerpts, version checks, and a clear abstention when evidence is missing.</p></div>
+        <div id="mode-badge" class="offline-badge"><span></span> Demo · lexical</div>
+      </div>
+      <div id="result" class="result empty"><div class="assistant-avatar">✦</div><div><h2>What can I help you find?</h2><p>Ask about registration, financial aid, housing, campus technology, or student conduct.</p></div></div>
+      <div class="composer">
+        <form id="ask-form">
+          <div class="composer-label"><label for="question">Your question</label><span id="active-collection">Searching fictional demo policies</span></div>
+          <div class="search"><textarea id="question" maxlength="500" rows="2" placeholder="Can my friend stay in my residence hall for three nights?" required></textarea><button type="submit" aria-label="Ask question"><span>Ask knowledge desk</span><b>→</b></button></div>
+          <div class="form-row"><div class="examples"><span>Suggestions</span><button type="button" data-q="When is the deadline to drop a full-term course?">Drop deadline</button><button type="button" data-q="How do I reset a forgotten campus password?">Password reset</button><button type="button" data-q="Can my friend stay in my dorm for three nights?">Overnight guest</button></div><label class="toggle" title="Requires a local Ollama server"><input id="ollama" type="checkbox"><span></span> Local Ollama rewrite</label></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <dialog id="viewer"><div class="dialog-head"><div><p class="kicker">SOURCE DOCUMENT</p><h2 id="viewer-title"></h2></div><button id="close-dialog" aria-label="Close">×</button></div><div id="viewer-meta" class="doc-meta viewer-meta"></div><div id="viewer-body" class="document-body"></div></dialog>
+  <dialog id="live-manager" class="live-manager"><div class="dialog-head"><div><p class="kicker">CONFIGURED ALLOWLIST</p><h2>Live source sync</h2><p>Refresh configured public pages and inspect their current retrieval status.</p></div><button id="close-live" aria-label="Close live source manager">×</button></div><div class="live-summary"><div><span>Retrieval engine</span><strong id="engine-mode">Checking…</strong><small id="engine-note"></small></div><div><span>Scheduled sync</span><strong id="sync-interval">Checking…</strong><small>Configured by the local launcher</small></div></div><div class="live-toolbar"><p id="refresh-feedback" role="status">Loading source status…</p><div class="sync-actions"><button id="refresh-live" class="refresh-button">Refresh sources now</button><button id="search-live" class="refresh-button search-live">Search live sources →</button></div></div><div id="live-sources" class="live-sources"></div></dialog>
+  <footer><span>GLS University Institute of Technology</span><span id="footer-note">Unofficial portfolio demo · Fictional policy content · No student data stored</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
