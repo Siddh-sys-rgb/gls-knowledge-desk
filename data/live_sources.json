@@ -1,0 +1,24 @@
+{
+  "timeout_seconds": 10,
+  "max_bytes": 2000000,
+  "chunk_chars": 1200,
+  "lexical_threshold": 0.32,
+  "embedding_threshold": 0.48,
+  "sources": [
+    {
+      "id": "GLS-FCAIT",
+      "title": "Faculty of Computer Applications & Information Technology",
+      "url": "https://www.glsuniversity.ac.in/fcait.html"
+    },
+    {
+      "id": "GLS-ANNOUNCEMENTS",
+      "title": "GLS University Announcements",
+      "url": "https://www.glsuniversity.ac.in/announcement.html"
+    },
+    {
+      "id": "GLS-SYLLABUS",
+      "title": "Syllabus for the Current Academic Year",
+      "url": "https://www.glsuniversity.ac.in/syllabus-for-the-current-academic-year.html"
+    }
+  ]
+}

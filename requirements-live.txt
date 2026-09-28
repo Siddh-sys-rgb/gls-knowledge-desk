@@ -1,0 +1,2 @@
+# Optional: required only when an allowlisted live source serves a PDF.
+pypdf>=5,<7
